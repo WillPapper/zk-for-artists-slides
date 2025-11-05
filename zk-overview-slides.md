@@ -101,7 +101,7 @@ You get succinctness (small proofs) but NOT automatic confidentiality. Data is p
 
 ## Usage Today
 
-• Verifying TEE attestations
+• Verifying complex signatures
 • Rollup bridges
 
 ---
