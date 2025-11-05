@@ -44,7 +44,7 @@ Small proof, fast verification. Even for massive computations.
 
 ---
 
-## Confidentiality
+## Privacy
 
 Prove facts while keeping the underlying data completely secret.
 
@@ -93,9 +93,9 @@ fn main() {
 
 ---
 
-## zkVM Trade-off
+## Plot Twist: zkVMs Aren't Zero-Knowledge Yet
 
-You get succinctness (small proofs) but NOT automatic confidentiality. Data is public by default.
+You get succinctness (small proofs) but NOT automatic privacy. Data is public by default.
 
 ---
 
