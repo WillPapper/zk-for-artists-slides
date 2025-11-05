@@ -95,7 +95,7 @@ fn main() {
 
 ---
 
-## Plot Twist: zkVMs Aren't Zero-Knowledge Yet
+## An Important Catch: zkVMs Aren't Zero-Knowledge Yet
 
 You get succinctness (small proofs) but NOT automatic privacy. Data is public by default.
 
