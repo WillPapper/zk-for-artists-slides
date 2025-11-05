@@ -2,6 +2,30 @@
 
 ---
 
+## How Do You Prove an AI Model Is Actually Running?
+
+Not just showing outputs—proving which model, which version, which weights.
+
+---
+
+## How Do You Prove AI Training?
+
+Verify datasets, training steps, and model lineage without exposing proprietary data.
+
+---
+
+## How Do Artists Prove Human Creative Input?
+
+Distinguish human process from AI generation—prove the artist's hand in the work.
+
+---
+
+## Enter Zero Knowledge
+
+Technology that lets you prove all of this without revealing your secrets.
+
+---
+
 ## Use Cases of ZK
 
 Reveal outputs without revealing inputs: voting results, identity verification, ownership proofs.
