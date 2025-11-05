@@ -32,17 +32,19 @@ SP1, RISC Zero, Jolt—write Rust, get ZK proofs.
 
 ---
 
-## Example - Fibonacci in SP1
+## Example - Fibonacci in Jolt
 
 ```rust
-sp1_zkvm::entrypoint!(main);
-pub fn main() {
-    let n = sp1_zkvm::io::read::<u32>();
-    let (mut a, mut b) = (0, 1);
-    for _ in 0..n {
-        (a, b) = (b, (a + b) % 7919);
+#[jolt::provable]
+fn fib(n: u32) -> u128 {
+    let mut a: u128 = 0;
+    let mut b: u128 = 1;
+    for _ in 1..n {
+        let sum = a + b;
+        a = b;
+        b = sum;
     }
-    sp1_zkvm::io::commit(&b);
+    b
 }
 ```
 
@@ -64,6 +66,12 @@ You get succinctness (small proofs) but NOT automatic confidentiality—data is 
 ## So Why Aren't zkVMs Everywhere?
 
 1M-5M× overhead → 50K-10K× today → ~10× in 3-5 years.
+
+---
+
+## What Are TEEs?
+
+Trusted hardware (Intel SGX, AMD SEV) that runs code in isolated enclaves with attestation.
 
 ---
 
