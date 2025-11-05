@@ -58,3 +58,23 @@ You get succinctness (small proofs) but NOT automatic confidentiality—data is 
 
 • Verifying TEE attestations
 • Rollup bridges
+
+---
+
+## Slide 8: TEEs vs zkVMs
+
+TEEs verify code is running; zkVMs verify computation is correct.
+
+---
+
+## Slide 9: Verifiable AI
+
+TEEs: Run full AI models at native speed.
+zkVMs: Verifiable inference still impractical—too slow.
+
+---
+
+## Slide 10: zkVM Overhead Evolution
+
+1M-5M× overhead → 50K-10K× today → ~10× in 3-5 years.
+
