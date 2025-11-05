@@ -2,37 +2,37 @@
 
 ---
 
-## Slide 0: Use Cases of ZK
+## Use Cases of ZK
 
 Reveal outputs without revealing inputs: voting results, identity verification, ownership proofs.
 
 ---
 
-## Slide 1: What is ZK?
+## What is ZK?
 
 Verifiable, private computation—prove calculations correct without showing the work.
 
 ---
 
-## Slide 2: Succinctness
+## Succinctness
 
 Small proof, fast verification—even for massive computations.
 
 ---
 
-## Slide 3: Confidentiality
+## Confidentiality
 
 Prove facts while keeping the underlying data completely secret.
 
 ---
 
-## Slide 4: Leading zkVMs
+## Leading zkVMs
 
 SP1, RISC Zero, Jolt—write Rust, get ZK proofs.
 
 ---
 
-## Slide 5: Example - Fibonacci in SP1
+## Example - Fibonacci in SP1
 
 ```rust
 sp1_zkvm::entrypoint!(main);
@@ -48,33 +48,39 @@ pub fn main() {
 
 ---
 
-## Slide 6: zkVM Trade-off
+## zkVM Trade-off
 
 You get succinctness (small proofs) but NOT automatic confidentiality—data is public by default.
 
 ---
 
-## Slide 7: Usage Today
+## Usage Today
 
 • Verifying TEE attestations
 • Rollup bridges
 
 ---
 
-## Slide 8: TEEs vs zkVMs
+## So Why Aren't zkVMs Everywhere?
 
-TEEs verify code is running; zkVMs verify computation is correct.
+1M-5M× overhead → 50K-10K× today → ~10× in 3-5 years.
 
 ---
 
-## Slide 9: Verifiable AI
+## TEEs vs zkVMs
+
+TEEs: Pragmatic, native speed, weaker guarantees.
+zkVMs: Mathematical proof, huge overhead, strongest guarantees.
+
+---
+
+## Verifiable AI
 
 TEEs: Run full AI models at native speed.
 zkVMs: Verifiable inference still impractical—too slow.
 
 ---
 
-## Slide 10: zkVM Overhead Evolution
+## The Path Forward
 
-1M-5M× overhead → 50K-10K× today → ~10× in 3-5 years.
-
+TEEs will deliver verifiable compute first; zkVMs will complement as performance improves.
