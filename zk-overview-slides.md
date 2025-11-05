@@ -20,7 +20,7 @@ Distinguish human process from AI generation. Prove the artist's hand in the wor
 
 ---
 
-## Enter Zero Knowledge
+## Zero Knowledge Cryptography
 
 Technology that lets you prove all of this without revealing your underlying data.
 
@@ -56,7 +56,7 @@ SP1, RISC Zero, Jolt. Write Rust, get ZK proofs.
 
 ---
 
-## Example - Fibonacci in Jolt
+## Example - Fibonacci in Jolt (Guest)
 
 ```rust
 #[jolt::provable]
@@ -69,6 +69,25 @@ fn fib(n: u32) -> u128 {
         b = sum;
     }
     b
+}
+```
+
+---
+
+## Generating the Proof (Host)
+
+```rust
+fn main() {
+    // Compile and preprocess the program
+    let program = guest::compile_fib("/tmp/targets");
+    let prover = guest::build_prover_fib(program, preprocessing);
+
+    // Generate proof for fib(50)
+    let (output, proof, io) = prover(50);
+
+    // Verify the proof
+    let is_valid = verifier(50, output, io, proof);
+    println!("Valid: {is_valid}");
 }
 ```
 
@@ -116,4 +135,3 @@ zkVMs: Verifiable inference still impractical—too slow.
 ## The Path Forward
 
 TEEs will deliver verifiable compute first; zkVMs will complement as performance improves.
-
