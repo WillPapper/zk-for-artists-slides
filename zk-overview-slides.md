@@ -110,7 +110,7 @@ You get succinctness (small proofs) but NOT automatic privacy. Data is public by
 
 ## So Why Aren't zkVMs Everywhere?
 
-1M-5M× overhead → 50K-10K× today → ~10× in 3-5 years.
+1M-5M× overhead → 10K-50K× today → ~10× in 3-5 years.
 
 ---
 
