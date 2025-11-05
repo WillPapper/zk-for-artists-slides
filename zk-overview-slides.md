@@ -1,5 +1,7 @@
 # ZK for Artists
 
+### Glitch Artist Residency - November 5th, 2025
+
 ---
 
 ## How Do You Prove an AI Model Is Actually Running?
