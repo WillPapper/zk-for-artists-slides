@@ -4,25 +4,25 @@
 
 ## How Do You Prove an AI Model Is Actually Running?
 
-Not just showing outputs—proving which model, which version, which weights.
+Not just showing outputs. Proving which model, which version, which weights.
 
 ---
 
 ## How Do You Prove AI Training?
 
-Verify datasets, training steps, and model lineage without exposing proprietary data.
+Verify datasets, training steps, and other inputs
 
 ---
 
 ## How Do Artists Prove Human Creative Input?
 
-Distinguish human process from AI generation—prove the artist's hand in the work.
+Distinguish human process from AI generation. Prove the artist's hand in the work.
 
 ---
 
 ## Enter Zero Knowledge
 
-Technology that lets you prove all of this without revealing your secrets.
+Technology that lets you prove all of this without revealing your underlying data.
 
 ---
 
@@ -34,13 +34,13 @@ Reveal outputs without revealing inputs: voting results, identity verification, 
 
 ## What is ZK?
 
-Verifiable, private computation—prove calculations correct without showing the work.
+Verifiable, private computation. Prove calculations correct without showing the work.
 
 ---
 
 ## Succinctness
 
-Small proof, fast verification—even for massive computations.
+Small proof, fast verification. Even for massive computations.
 
 ---
 
@@ -52,7 +52,7 @@ Prove facts while keeping the underlying data completely secret.
 
 ## Leading zkVMs
 
-SP1, RISC Zero, Jolt—write Rust, get ZK proofs.
+SP1, RISC Zero, Jolt. Write Rust, get ZK proofs.
 
 ---
 
@@ -76,7 +76,7 @@ fn fib(n: u32) -> u128 {
 
 ## zkVM Trade-off
 
-You get succinctness (small proofs) but NOT automatic confidentiality—data is public by default.
+You get succinctness (small proofs) but NOT automatic confidentiality. Data is public by default.
 
 ---
 
@@ -116,3 +116,4 @@ zkVMs: Verifiable inference still impractical—too slow.
 ## The Path Forward
 
 TEEs will deliver verifiable compute first; zkVMs will complement as performance improves.
+
