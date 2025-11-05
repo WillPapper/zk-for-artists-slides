@@ -95,7 +95,7 @@ fn main() {
 
 ---
 
-## An Important Catch: zkVMs Aren't Zero-Knowledge Yet
+## But... zkVMs Aren't Zero-Knowledge Yet
 
 You get succinctness (small proofs) but NOT automatic privacy. Data is public by default.
 
